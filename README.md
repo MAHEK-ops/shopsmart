@@ -5,3 +5,6 @@
 1. Implement at least one full CRUD RESTful API
 1. Deploy it on Render for backend and vercel for frontend
 1. Resolve CORS issue if needed after deployment
+   
+## CI Status
+This project uses GitHub Actions to validate Idea.md automatically on every push.
