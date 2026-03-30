@@ -1,0 +1,21 @@
+name: Check Idea.md
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  validate-idea:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Make script executable
+        run: chmod +x scripts/check_idea.sh
+
+      - name: Run script
+        run: ./scripts/check_idea.sh
